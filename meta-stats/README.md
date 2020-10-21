@@ -68,7 +68,7 @@ Table of Contents
       
       f. Add do_compile - Normal recipe build task which compiles the source code
       
-      g. Add do_install - Normal recipe build task which install binary to /usr/bin directory
+      g. Add do_install - Normal recipe build task which install components to destination directory
       
 ### 7. Build recipe
       Run 'bitbake json-report-generator-sources' to build the recipe
