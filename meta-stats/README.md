@@ -11,7 +11,9 @@ Table of Contents
    
   II. Adding the meta-stats layer to your build
   
- III. Misc
+ III. Build the recipe and final image
+ 
+  IV. Misc
 
 ## I. Creating meta-stats layer
 
@@ -70,9 +72,6 @@ Table of Contents
       
       g. Add do_install - Normal recipe build task which install binary to the destination directory
       
-### 7. Build recipe
-      Run 'bitbake json-report-generator-sources' to build the recipe
-      
 II. Adding the meta-stats layer to your build
 =================================================
 
@@ -80,7 +79,14 @@ Run 'bitbake-layers add-layer meta-stats' to add the meta-stats layer to conf/bb
 
 Alternatively, add the meta-stats layer by manually editing the conf/bblayers.conf
 
-III. Misc
+III. Build the recipe and final image
 ========
 
---- replace with specific information about the meta-stats layer ---
+Run 'bitbake json-report-generator-sources' to build the recipe
+
+Run 'bitbake core-image-sato' to build the final image
+
+IV. Misc
+========
+
+---replace with special information about meta-stats layer---
