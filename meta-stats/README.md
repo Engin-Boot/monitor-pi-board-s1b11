@@ -13,26 +13,27 @@ Table of Contents
   
  III. Misc
 
-I. Creating meta-stats layer
+## I. Creating meta-stats layer
 ================================================
 
-1. Create meta-stats layer using bitbake-layers command
+### 1. Create meta-stats layer using bitbake-layers command
 
-### bitbake-layers create-layer meta-stats
+   bitbake-layers create-layer meta-stats
 
-2. Create recipe-apps directory inside meta-stats
+### 2. Create recipe-apps directory inside meta-stats
 
-### mkdir recipe-apps
+   mkdir recipe-apps
 
-3. Create json-report-generator-sources directory inside recipe-apps
+### 3. Create json-report-generator-sources directory inside recipe-apps
 
-### mkdir json-report-generator-sources
+   mkdir json-report-generator-sources
 
-4. Create json-report-generator-sources_1.00.bb source recipe file inside json-report-generator-sources directory
+### 4. Create json-report-generator-sources_1.00.bb source recipe file inside json-report-generator-sources directory
 
-### touch json-report-generator-sources_1.00.bb
+   touch json-report-generator-sources_1.00.bb
 
-5. Create the following python scripts
+### 5. Create the following python scripts
+ 
 
 II. Adding the meta-stats layer to your build
 =================================================
