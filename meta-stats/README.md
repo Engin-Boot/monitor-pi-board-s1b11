@@ -14,11 +14,10 @@ Table of Contents
  III. Misc
 
 ## I. Creating meta-stats layer
-================================================
 
 ### 1. Create meta-stats layer using bitbake-layers command
 
-       bitbake-layers create-layer meta-stats
+    bitbake-layers create-layer meta-stats
 
 ### 2. Create recipe-apps directory inside meta-stats
 
