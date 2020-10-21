@@ -31,7 +31,7 @@ Table of Contents
 
      touch json-report-generator-sources_1.00.bb
 
-### 5. Create json-report-generator-sources directory inside json-report-generator-sources (current) and create the python scripts inside it 
+### 5. Create json-report-generator-sources directory inside json-report-generator-sources (current) and create the python scripts and license file inside it 
 
      a. json-report-generator.py: main source file, imports package_json_object_creator and package_json_report_writer
 
@@ -53,13 +53,21 @@ Table of Contents
          ]
         }
         
+     d. COPYING: MIT license file
+        
 ### 6. Modify the json-report-generator-sources_1.00.bb recipe
       a. Add the SUMMARY - description of the recipe
+      
       b. Add LICENSE - License name
+      
       c. Add LIC_FILES_CHKSUM - It is always required to make sure that no one tampers the file
-      d. Add SRC_URI - Consists the list of required URL's, files 
+      
+      d. Add SRC_URI - Consists the list of required URL's, files
+      
       e. Add S - Specify the location of the sources
+      
       f. Add do_compile - Normal recipe build task which compiles the source code
+      
       g. Add do_install - Normal recipe build task which copies the source code to holding area
       
 II. Adding the meta-stats layer to your build
