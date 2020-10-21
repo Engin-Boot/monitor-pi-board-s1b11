@@ -17,14 +17,6 @@ Dependencies
   .
   .
 
-Patches
-=======
-
-Please submit any patches against the meta-stats layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
-
 Table of Contents
 =================
 
