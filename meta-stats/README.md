@@ -55,8 +55,13 @@ Table of Contents
         
 ### 6. Modify the json-report-generator-sources_1.00.bb recipe
       a. Add the SUMMARY - description of the recipe
-
-
+      b. Add LICENSE - License name
+      c. Add LIC_FILES_CHKSUM - It is always required to make sure that no one tampers the file
+      d. Add SRC_URI - Consists the list of required URL's, files 
+      e. Add S - Specify the location of the sources
+      f. Add do_compile - Normal recipe build task which compiles the source code
+      g. Add do_install - Normal recipe build task which copies the source code to holding area
+      
 II. Adding the meta-stats layer to your build
 =================================================
 
