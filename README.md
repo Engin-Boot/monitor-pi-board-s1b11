@@ -1,4 +1,4 @@
-# Build Qt GUI application on Raspberry Pi3 board (Pi board)
+# Build Qt GUI application on Raspberry Pi 4 board (Pi board)
 
 Case Study by [Krishna Chaithanya](https://github.com/chaithubk)
 
