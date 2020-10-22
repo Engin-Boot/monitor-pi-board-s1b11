@@ -80,7 +80,8 @@ Table of Contents
 
   Run `bitbake core-image-sato` to build the Linux distribution for Pi board
   
-  After the completion of build, many components like manifest file, Raspberrypi image can be found in ${DEPLOY_DIR_IMAGE}/ directory
+  Manifest file, Raspberrypi image are located in ${DEPLOY_DIR_IMAGE}/ directory
+  after the completion of build process
   
 # II. Creating meta-stats layer
 
@@ -115,8 +116,7 @@ Table of Contents
         packagename, packagearch, version
         
      c. package_json_report_writer: contains write_json_report module, which writes the JSON object to a JSON file
-       
-        
+            
      d. COPYING: MIT license file
         
 ## 7. Modify the json-report-generator-sources_1.00.bb recipe
