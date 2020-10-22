@@ -12,8 +12,6 @@ Table of Contents
   II. Adding the meta-stats layer to your build
   
  III. Build the recipe and final image
- 
-  IV. Misc
 
 ## I. Creating meta-stats layer
 
@@ -75,18 +73,13 @@ Table of Contents
 II. Adding the meta-stats layer to your build
 =================================================
 
-Run 'bitbake-layers add-layer meta-stats' to add the meta-stats layer to conf/bblayers.conf
+   Run 'bitbake-layers add-layer meta-stats' to add the meta-stats layer to conf/bblayers.conf
 
-Alternatively, add the meta-stats layer by manually editing the conf/bblayers.conf
+   Alternatively, add the meta-stats layer by manually editing the conf/bblayers.conf
 
 III. Build the recipe and final image
 ========
 
-Run 'bitbake json-report-generator-sources' to build the recipe
+   Run 'bitbake json-report-generator-sources' to build the recipe
 
-Run 'bitbake core-image-sato' to build the final image
-
-IV. Misc
-========
-
----replace with special information about meta-stats layer---
+   Run 'bitbake core-image-sato' to build the final image
