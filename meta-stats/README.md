@@ -51,3 +51,17 @@ Table of Contents
 # I. Building core-image-sato image for Pi board
 
 ## 1. Setting up the yocto build environment
+
+  source oe-build-init-env script inside poky directory
+   
+  Run `source oe-build-init-env sato-build` to setup local path
+  and other variables for build directory
+  
+  It creates `sato-build` directory with `conf` directory inside it
+  
+## 2. Adding dependant layers in conf/bblayers.conf
+  
+  Run `bitbake-layers add-layer meta-raspberrypi`
+  or manually edit conf/bblayers.conf to add layers
+  
+  Set the target machine by editing `MACHINE` to  
