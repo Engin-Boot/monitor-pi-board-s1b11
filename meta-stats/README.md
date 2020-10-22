@@ -80,8 +80,8 @@ Table of Contents
 
   Run `bitbake core-image-sato` to build the Linux distribution for Pi board
   
-  Manifest file, Raspberrypi image and other components are located in [${DEPLOY_DIR_IMAGE}]
-  (https://www.yoctoproject.org/docs/1.6/mega-manual/mega-manual.html#var-DEPLOY_DIR_IMAGE) directory, 
+  Manifest file, Raspberrypi image and other components are located 
+  in [${DEPLOY_DIR_IMAGE}](https://www.yoctoproject.org/docs/1.6/mega-manual/mega-manual.html#var-DEPLOY_DIR_IMAGE) directory, 
   after the completion of build process
   
 # II. Creating meta-stats layer
@@ -152,8 +152,8 @@ Table of Contents
 
   Json report is generated out of final build process.
   It contains all the packages installed during the build of core-image-sato.
-  Json report is created in [${DEPLOY_DIR}]
-  (https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#var-DEPLOY_DIR) directory
+  Json report is created in 
+  [${DEPLOY_DIR}](https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#var-DEPLOY_DIR) directory
   
   The format of the JSON file is as follows:
         
