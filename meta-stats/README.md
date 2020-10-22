@@ -16,16 +16,21 @@ Dependencies
   branch: zeus
   
   URI: https://github.com/agherzan/meta-raspberrypi.git
+  
   branch: zeus
   
   URI: https://github.com/openembedded/meta-openembedded.git
+  
   layers: meta-oe, meta-python, meta-networking, meta-multimedia
+  
   branch: zeus
   
   URI: https://github.com/meta-qt5/meta-qt5.git
+  
   branch: zeus
   
   URI: https://github.com/openembedded/openembedded-core.git
+  
   branch: zeus
   
 Table of Contents
