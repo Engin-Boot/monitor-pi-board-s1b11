@@ -173,4 +173,4 @@ Table of Contents
  1. [Yocto project reference manual](https://www.yoctoproject.org/docs/3.0.4/ref-manual/ref-manual.html)
  2. [Yocto project mega-manual](https://www.yoctoproject.org/docs/3.0.4/mega-manual/mega-manual.html)
  
-Copyright (c) <2020> <anudeepthika> 
+Copyright (c) [2020] anudeepthika 
