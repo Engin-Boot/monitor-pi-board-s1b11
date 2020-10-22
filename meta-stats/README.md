@@ -47,3 +47,7 @@ Table of Contents
   IV. Building the recipe and final image
   
   V. Results
+  
+# I. Building core-image-sato image for Pi board
+
+## 1. Setting up the yocto build environment
