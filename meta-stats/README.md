@@ -9,8 +9,8 @@ Please see the corresponding sections below for details.
 Dependencies
 ==================================================
 
-  URI: git://git.yoctoproject.org/poky.git
-  layers: meta, meta-poky, meta-yocto-bsp
+  URI: git://git.yoctoproject.org/poky.git 
+  layers: meta, meta-poky, meta-yocto-bsp 
   branch: zeus
   
   URI: https://github.com/agherzan/meta-raspberrypi.git
