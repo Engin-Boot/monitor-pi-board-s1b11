@@ -9,6 +9,8 @@ Please see the corresponding sections below for details.
 Dependencies
 ==================================================
 
+  Clone the below dependencies.
+
   URI: git://git.yoctoproject.org/poky.git
   
   layers: meta, meta-poky, meta-yocto-bsp
