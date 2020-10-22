@@ -59,7 +59,7 @@ Table of Contents
   
   It creates `sato-build` directory with `conf` directory inside it
   
-## 2. Adding dependant layers in conf/bblayers.conf
+## 2. Adding dependant layers in [conf/bblayers.conf](https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#structure-build-conf-bblayers.conf)
   
   Run `bitbake-layers add-layer layer-name`
   or edit conf/bblayers.conf manually to add layers
@@ -120,6 +120,7 @@ Table of Contents
      d. COPYING: MIT license file
         
 ## 7. Modify the json-report-generator-sources_1.00.bb recipe
+
       a. Add the SUMMARY - description of the recipe
       
       b. Add LICENSE - License name
