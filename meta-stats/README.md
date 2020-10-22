@@ -64,7 +64,7 @@ Table of Contents
       
       d. Add SRC_URI - Consists the list of required URL's, files
       
-      e. Add S - Specify the location of the sources
+      e. Add S - Specify the location of the source codes
       
       f. Add do_compile - Normal recipe build task which compiles the source code
       
