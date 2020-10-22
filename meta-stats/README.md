@@ -80,6 +80,8 @@ Table of Contents
 
   Run `bitbake core-image-sato` to build the Linux distribution for Pi board
   
+  After the completion of build 
+  
 # II. Creating meta-stats layer
 
 ## 1. Create meta-stats layer using bitbake-layers command
