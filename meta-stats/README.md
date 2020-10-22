@@ -48,6 +48,8 @@ Table of Contents
   
   V. Results
   
+  VI. References
+  
 # I. Building core-image-sato image for Pi board
 
 ## 1. Setting up the yocto build environment
@@ -165,3 +167,8 @@ Table of Contents
           }
          ]
         }
+        
+# VI. References
+
+ 1. [Yocto project reference manual](https://www.yoctoproject.org/docs/3.0.4/ref-manual/ref-manual.html)
+ 2. [Yocto project mega-manual](https://www.yoctoproject.org/docs/3.0.4/mega-manual/mega-manual.html)
