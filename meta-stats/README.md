@@ -177,4 +177,5 @@ License
 ===========================
 
 Copyright © 2020, [Aditi Ambadkar](https://github.com/aditiambadkar), [Anu Deepthika](https://github.com/anudeepthika).
+
 Released under the [MIT License](COPYING.MIT). 
