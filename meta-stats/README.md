@@ -80,7 +80,7 @@ Table of Contents
 
   Run `bitbake core-image-sato` to build the Linux distribution for Pi board
   
-  Manifest file, Raspberrypi image are located in ${DEPLOY_DIR_IMAGE}/ directory
+  Manifest file, Raspberrypi image are located in [${DEPLOY_DIR_IMAGE}](https://www.yoctoproject.org/docs/1.6/mega-manual/mega-manual.html#var-DEPLOY_DIR_IMAGE) directory, 
   after the completion of build process
   
 # II. Creating meta-stats layer
