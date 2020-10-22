@@ -68,7 +68,7 @@ Table of Contents
   raspberrypi, meta-oe, meta-python, meta-networking, meta-multimedia
   and meta-qt5 layers
   
-## 3. Local configuration file
+## 3. Local configuration file ([conf/local.conf](https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#structure-build-conf-local.conf))
 
   Set the target machine and other local user settings in conf/local.conf
   
