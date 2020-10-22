@@ -52,9 +52,9 @@ Table of Contents
 
 ## 1. Setting up the yocto build environment
 
-  source oe-build-init-env script inside poky directory
+  source [oe-build-init-env](https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#structure-core-script) script inside poky directory
    
-  Run `source oe-build-init-env sato-build` to setup local path
+  Run `source oe-build-init-env ~/sato-build` to setup local path
   and other variables for build directory
   
   It creates `sato-build` directory with `conf` directory inside it
@@ -149,7 +149,7 @@ Table of Contents
 # V. Results
 
   Json report is generated out of final build process.
-  It contains all the packages installed during the build of core-image-sato
+  It contains all the packages installed during the build of core-image-sato.
   The format of the JSON file is as follows:
         
         {
