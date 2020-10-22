@@ -62,7 +62,7 @@ Table of Contents
 ## 2. Adding dependant layers in conf/bblayers.conf
   
   Run `bitbake-layers add-layer layer-name`
-  or manually edit conf/bblayers.conf to add layers
+  or edit conf/bblayers.conf manually to add layers
   
   Add poky, meta-poky, meta-yocto-bsp, meta-
   raspberrypi, meta-oe, meta-python, meta-networking, meta-multimedia
@@ -84,19 +84,19 @@ Table of Contents
 
 ## 1. Create meta-stats layer using bitbake-layers command
 
-  `bitbake-layers create-layer meta-stats`
+    bitbake-layers create-layer meta-stats
 
 ## 2. Create recipe-apps directory inside meta-stats
 
-  `mkdir recipe-apps`
+    mkdir recipe-apps
 
 ## 3. Create json-report-generator-sources directory inside recipe-apps
 
-     `mkdir json-report-generator-sources`
+     mkdir json-report-generator-sources
 
 ## 4. Create json-report-generator-sources_1.00.bb source recipe file inside json-report-generator-sources directory
 
-     `touch json-report-generator-sources_1.00.bb`
+     touch json-report-generator-sources_1.00.bb
 
 ## 5. Create json-report-generator-sources directory inside json-report-generator-sources (current) and create the python scripts and license file inside it 
 
@@ -136,3 +136,15 @@ Table of Contents
       f. Add do_compile - Normal recipe build task which compiles the source code
       
       g. Add do_install - Normal recipe build task which installs binary to the destination directory
+      
+#  III. Adding the meta-stats layer to your build
+
+   Run `bitbake-layers add-layer meta-stats` to add the meta-stats layer to conf/bblayers.conf
+
+   Alternatively, add the meta-stats layer by manually editing the conf/bblayers.conf
+   
+# IV. Building the recipe and final image
+
+   Run `bitbake json-report-generator-sources` to build the recipe
+
+   Run `bitbake core-image-sato` to build the final image
