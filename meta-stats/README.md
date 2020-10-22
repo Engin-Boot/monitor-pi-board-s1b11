@@ -59,18 +59,18 @@ Table of Contents
   
   It creates `sato-build` directory with `conf` directory inside it
   
-## 2. Adding dependant layers in [conf/bblayers.conf](https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#structure-build-conf-bblayers.conf)
+## 2. Adding dependant layers in conf/bblayers.conf
   
   Run `bitbake-layers add-layer layer-name`
-  or edit conf/bblayers.conf manually to add layers
+  or edit [conf/bblayers.conf](https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#structure-build-conf-bblayers.conf) manually to add layers
   
   Add poky, meta-poky, meta-yocto-bsp, meta-
   raspberrypi, meta-oe, meta-python, meta-networking, meta-multimedia
   and meta-qt5 layers
   
-## 3. Local configuration file ([conf/local.conf](https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#structure-build-conf-local.conf))
+## 3. Local configuration file
 
-  Set the target machine and other local user settings in conf/local.conf
+  Set the target machine and other local user settings in [conf/local.conf](https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#structure-build-conf-local.conf)
   
   Set `MACHINE` to "raspberrypi4-64" from default machine
   
@@ -80,7 +80,8 @@ Table of Contents
 
   Run `bitbake core-image-sato` to build the Linux distribution for Pi board
   
-  Manifest file, Raspberrypi image are located in [${DEPLOY_DIR_IMAGE}](https://www.yoctoproject.org/docs/1.6/mega-manual/mega-manual.html#var-DEPLOY_DIR_IMAGE) directory, 
+  Manifest file, Raspberrypi image and other components are located in [${DEPLOY_DIR_IMAGE}]
+  (https://www.yoctoproject.org/docs/1.6/mega-manual/mega-manual.html#var-DEPLOY_DIR_IMAGE) directory, 
   after the completion of build process
   
 # II. Creating meta-stats layer
@@ -151,6 +152,9 @@ Table of Contents
 
   Json report is generated out of final build process.
   It contains all the packages installed during the build of core-image-sato.
+  Json report is created in [${DEPLOY_DIR}]
+  (https://www.yoctoproject.org/docs/1.8/ref-manual/ref-manual.html#var-DEPLOY_DIR) directory
+  
   The format of the JSON file is as follows:
         
         {
