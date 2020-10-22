@@ -80,27 +80,31 @@ Table of Contents
 
   Run `bitbake core-image-sato` to build the Linux distribution for Pi board
   
-  After the completion of build 
+  After the completion of build, many components like manifest file, Raspberrypi image can be found in ${DEPLOY_DIR_IMAGE}/ directory
   
 # II. Creating meta-stats layer
 
-## 1. Create meta-stats layer using bitbake-layers command
+## 1. Prerequisite
+
+    Manifest file which is generated out of core-image-sato build process
+
+## 2. Create meta-stats layer using bitbake-layers command
 
     bitbake-layers create-layer meta-stats
 
-## 2. Create recipe-apps directory inside meta-stats
+## 3. Create recipe-apps directory inside meta-stats
 
     mkdir recipe-apps
 
-## 3. Create json-report-generator-sources directory inside recipe-apps
+## 4. Create json-report-generator-sources directory inside recipe-apps
 
      mkdir json-report-generator-sources
 
-## 4. Create json-report-generator-sources_1.00.bb source recipe file inside json-report-generator-sources directory
+## 5. Create json-report-generator-sources_1.00.bb source recipe file inside json-report-generator-sources directory
 
      touch json-report-generator-sources_1.00.bb
 
-## 5. Create json-report-generator-sources directory inside json-report-generator-sources (current) and create the python scripts and license file inside it 
+## 6. Create json-report-generator-sources directory inside json-report-generator-sources (current) and create the python scripts and license file inside it 
 
      a. json-report-generator.py: main source file, imports package_json_object_creator and package_json_report_writer
 
@@ -111,20 +115,11 @@ Table of Contents
         packagename, packagearch, version
         
      c. package_json_report_writer: contains write_json_report module, which writes the JSON object to a JSON file
-        The format of the JSON file is as follows:
-        
-        {
-         "packages": [
-          {
-           "package_name": "adwaita-icon-theme"
-           "version": "3.32.0"
-          }
-         ]
-        }
+       
         
      d. COPYING: MIT license file
         
-## 6. Modify the json-report-generator-sources_1.00.bb recipe
+## 7. Modify the json-report-generator-sources_1.00.bb recipe
       a. Add the SUMMARY - description of the recipe
       
       b. Add LICENSE - License name
@@ -150,3 +145,18 @@ Table of Contents
    Run `bitbake json-report-generator-sources` to build the recipe
 
    Run `bitbake core-image-sato` to build the final image
+   
+# V. Results
+
+  Json report is generated out of final build process.
+  It contains all the packages installed during the build of core-image-sato
+  The format of the JSON file is as follows:
+        
+        {
+         "packages": [
+          {
+           "package_name": "adwaita-icon-theme"
+           "version": "3.32.0"
+          }
+         ]
+        }
