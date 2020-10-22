@@ -77,17 +77,18 @@ Table of Contents
   Set `ENABLE_UART = "1"` to enable UART for serial communication
   
 ## 4. Build core-image-sato for Pi Board
+
   Run `bitbake core-image-sato` to build the Linux distribution for Pi board
   
 # II. Creating meta-stats layer
 
 ## 1. Create meta-stats layer using bitbake-layers command
 
-     `bitbake-layers create-layer meta-stats`
+  `bitbake-layers create-layer meta-stats`
 
 ## 2. Create recipe-apps directory inside meta-stats
 
-     `mkdir recipe-apps`
+  `mkdir recipe-apps`
 
 ## 3. Create json-report-generator-sources directory inside recipe-apps
 
