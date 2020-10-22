@@ -61,7 +61,20 @@ Table of Contents
   
 ## 2. Adding dependant layers in conf/bblayers.conf
   
-  Run `bitbake-layers add-layer meta-raspberrypi`
+  Run `bitbake-layers add-layer layer-name`
   or manually edit conf/bblayers.conf to add layers
   
-  Set the target machine by editing `MACHINE` to  
+  Add poky, meta-poky, meta-yocto-bsp, meta-
+  raspberrypi, meta-oe, meta-python, meta-networking, meta-multimedia
+  and meta-qt5 layers
+  
+## 3. Local configuration file
+
+  Set the target machine and other local user settings in conf/local.conf
+  
+  Set `MACHINE` to "raspberrypi4-64" from default machine
+  
+  Set `ENABLE_UART = "1"` to enable UART for serial communication
+  
+## 4. Build core-image-sato for Pi Board
+  Run `bitbake core-image-sato` to build the Linux distribution for Pi board
