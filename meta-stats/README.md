@@ -11,7 +11,7 @@ Table of Contents
    
   II. Adding the meta-stats layer to your build
   
- III. Build the recipe and final image
+ III. Building the recipe and final image
 
 ## I. Creating meta-stats layer
 
@@ -60,15 +60,15 @@ Table of Contents
       
       b. Add LICENSE - License name
       
-      c. Add LIC_FILES_CHKSUM - It is always required to make sure that no one tampers the file
+      c. Add LIC_FILES_CHKSUM - It is always necessary to make sure that no one tampers the file
       
       d. Add SRC_URI - Consists the list of required URL's, files
       
-      e. Add S - Specify the location of the source codes
+      e. Add S - Specifies the location of the source codes
       
       f. Add do_compile - Normal recipe build task which compiles the source code
       
-      g. Add do_install - Normal recipe build task which install binary to the destination directory
+      g. Add do_install - Normal recipe build task which installs binary to the destination directory
       
 II. Adding the meta-stats layer to your build
 =================================================
@@ -77,7 +77,7 @@ II. Adding the meta-stats layer to your build
 
    Alternatively, add the meta-stats layer by manually editing the conf/bblayers.conf
 
-III. Build the recipe and final image
+III. Building the recipe and final image
 ========
 
    Run 'bitbake json-report-generator-sources' to build the recipe
