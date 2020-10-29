@@ -18,7 +18,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y pep8
       
     - name: install pylint
-      run: sudo apt-get update && sudo apt-get install -y pylint
+      run: sudo apt-get update && pip3 install pylint
       
     - name: run pep8 on python scripts
       run: pep8 meta-stats/recipes-apps/json-report-generator-sources/json-report-generator-sources/*.py
