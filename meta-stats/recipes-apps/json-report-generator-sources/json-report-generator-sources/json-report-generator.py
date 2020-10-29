@@ -39,7 +39,8 @@ if not os.path.exists(output_directory):
     sys.exit(1)
 
 # create package JSON object
-package_dict = package_json_object_creator.create_package_json_object(input_manifest_file)
+package_dict = \
+    package_json_object_creator.create_package_json_object(input_manifest_file)
 
 # create package-json-report.json file
 package_json_report_writer.write_json_report(output_directory, package_dict)
