@@ -1,0 +1,27 @@
+name: Styling
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  Style:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: install pep8
+      run: sudo apt-get update && sudo apt-get install -y pep8
+      
+    - name: install pylint
+      run: sudo apt-get update && sudo apt-get install -y pylint
+      
+    - name: run pep8 on python scripts
+      run: pep8 meta-stats/recipes-apps/json-report-generator-sources/json-report-generator-sources/*.py
+      
+    - name: run pylint on python scripts
+      run: pylint meta-stats/recipes-apps/json-report-generator-sources/json-report-generator-sources/*.py
