@@ -78,6 +78,8 @@ Table of Contents
   
   Set `ENABLE_UART = "1"` to enable UART for serial communication
   
+  Add `CORE_IMAGE_EXTRA_INSTALL += "packagegroup-qt5-toolchain-target"` to install target packages for Qt5 SDK
+  
 ## 4. Build core-image-sato for Pi Board
 
   Run `bitbake core-image-sato` to build the Linux distribution for Pi board
